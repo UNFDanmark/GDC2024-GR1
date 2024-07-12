@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed = 10f;
     private Rigidbody rb;
-    private CharacterController controller;
-    private Vector3 playerVelocity;
-    private bool groundedPlayer;
-    private float jumpHeight = 1.0f;
-    private float gravityValue = -9.81f;
+
+    public float moveSpeed = 3f;
+    //private CharacterController controller;
+    //private Vector3 playerVelocity;
+    //private bool groundedPlayer;
+    //private float jumpHeight = 1.0f;
+    //private float gravityValue = -9.81f;
     
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector3 movement = rb.velocity;
-        movement.z = Input.GetAxisRaw("Horizontal") * speed;
+       //ovement.z = Input.GetAxisRaw("Horizontal") * speed;
         movement.x = Input.GetAxisRaw("Vertical") * speed;
         rb.velocity = movement;
+        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+        
+
+
+
+
+
     }
 }
 

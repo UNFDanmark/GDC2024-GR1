@@ -778,8 +778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b945321b860f144ea1e7c2895e26187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  moveSpeed: 5
+  speed: 10
+  moveSpeed: 10
 --- !u!1 &2046209017 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: d35c245a9badc4746a01064d4ea1570f,
@@ -847,8 +847,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5297635318026553974}
+  - component: {fileID: 5297635318026553976}
+  - component: {fileID: 5297635318026553975}
   m_Layer: 0
-  m_Name: "Player Character visua\xE6"
+  m_Name: Player Character visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -900,7 +902,7 @@ Transform:
   m_GameObject: {fileID: 4814114821076750540}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.36238, y: -31.379189, z: -5.45}
+  m_LocalPosition: {x: -29.36, y: -31.37, z: -5.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -909,6 +911,42 @@ Transform:
   - {fileID: 265827972}
   m_Father: {fileID: 1608953129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &5297635318026553975
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814114821076750540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd75a14f799439f45bc81caed7ea368a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &5297635318026553976
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4814114821076750540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e4a338337903ca241afc276b00a5eab4, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!4 &6392048428125275959
 Transform:
   m_ObjectHideFlags: 0

@@ -771,7 +771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1799526257}
-  speed: 12
   gravity: -40
   GroundCheck: {fileID: 1183050794}
   groundDistance: 0.4
@@ -779,6 +778,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   JumpHight: 3
+  SideSpeed: 5
+  currentSpeed: 0
+  permaspeed: -10
+  fastspeed: -25
+  slidepenalty: -5
+  PlayerHeight: {fileID: 1799526257}
+  normalHeigth: 2
+  crouchHeight: -1
+  t: 0
+  slideAccelerationTime: 1
+  slideDeccelerationTime: 0.4
+  y: 0
+  topslidespeed: 0
+  cooldown: 0.5
+  cooldownleft: 0
+  slideDecelerationTime: 2
 --- !u!143 &1799526257
 CharacterController:
   m_ObjectHideFlags: 0
@@ -982,7 +997,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4814114821076750540}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: e4a338337903ca241afc276b00a5eab4, type: 2}
   m_Animations: []

@@ -786,14 +786,9 @@ MonoBehaviour:
   PlayerHeight: {fileID: 1799526257}
   normalHeigth: 2
   crouchHeight: -1
-  t: 0
-  slideAccelerationTime: 1
-  slideDeccelerationTime: 0.4
-  y: 0
-  topslidespeed: 0
+  slideaccelerationTime: 0.1
   cooldown: 0.5
-  cooldownleft: 0
-  slideDecelerationTime: 2
+  slidedecelerationTime: 2
 --- !u!143 &1799526257
 CharacterController:
   m_ObjectHideFlags: 0

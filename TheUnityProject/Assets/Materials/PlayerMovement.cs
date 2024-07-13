@@ -4,37 +4,34 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public CharacterController controller;
 
-    public float speed = 10f;
-    private Rigidbody rb;
-
-    public float moveSpeed = 3f;
-    //private CharacterController controller;
-    //private Vector3 playerVelocity;
-    //private bool groundedPlayer;
-    //private float jumpHeight = 1.0f;
-    //private float gravityValue = -9.81f;
+    public float speed = 12f;
+    public float gravity = -9.82f;
+    private Vector3 velocity;
     
-    // Start is called before the first frame update
+    
+    
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 movement = rb.velocity;
-       //ovement.z = Input.GetAxisRaw("Horizontal") * speed;
-        movement.x = Input.GetAxisRaw("Vertical") * speed;
-        rb.velocity = movement;
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
         
+        float X = Input.GetAxisRaw("Horizontal");
+        float Z = Input.GetAxisRaw("Vertical");
 
+        Vector3 move = transform.right * X + transform.forward * Z;
 
+        controller.Move(move * speed * Time.deltaTime);
 
+        velocity.y += gravity * Time.deltaTime;
 
-
+        controller.Move(velocity * Time.deltaTime );
     }
+    
 }
 

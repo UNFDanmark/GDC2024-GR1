@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     
     ////////////////////////////////////////////////// health/game over //////////////////////////////////////////////
     public GameObject gameOverScreen;
-    public float MaxHealth = 50f;
+    public float MaxHealth = 5f;
     public float currenthealth;
     public float attackedCooldown = 0.5f;
     public float currentattackedCooldown;
@@ -67,7 +67,9 @@ public class PlayerMovement : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded && !isSliding)
         {
-            velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
+            
+            //velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
+            
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -120,7 +122,12 @@ public class PlayerMovement : MonoBehaviour
         {
             gameOverScreen.SetActive(true);
         }
-        currentattackedCooldown -= Time.deltaTime;
+
+        if (currentattackedCooldown > -1f)
+        {
+            currentattackedCooldown -= Time.deltaTime;
+        }
+        
         
     }
     
@@ -128,7 +135,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            gameOverScreen.SetActive(true);
             
             if (currentattackedCooldown <= 0f)
             {

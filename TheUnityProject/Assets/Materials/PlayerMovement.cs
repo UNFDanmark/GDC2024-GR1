@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     
+    ////////////////////////////////////////////////// Movement //////////////////////////////////////////////////////
     public float gravity = -9.82f;
     private Vector3 velocity;
     public Transform GroundCheck;
@@ -27,14 +28,30 @@ public class PlayerMovement : MonoBehaviour
     private bool isDecelerating = false;
     private float slideTime = 0f;
     private float decelTime = 0f;
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    ////////////////////////////////////////////////// health/game over //////////////////////////////////////////////
+    public GameObject gameOverScreen;
+    public float MaxHealth = 50f;
+    public float currenthealth;
+    public float attackedCooldown = 0.5f;
+    public float currentattackedCooldown;
+    public bool hasbeenattacked = false;
+    
+    
+    
     
     void Start()
     {
         currentSpeed = permaspeed;
+        currenthealth = MaxHealth ;
+        currentattackedCooldown = attackedCooldown;
     }
     
     void Update()
     {
+        ////////////////////////////////////////////////// Movement //////////////////////////////////////////////////
+        
         //WASD
         float Z = Input.GetAxisRaw("Vertical");
         Vector3 move = transform.right * currentSpeed + transform.forward * Z * SideSpeed;
@@ -96,6 +113,31 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = permaspeed;
         }
         
+        
+        /////////////////////////////////////////////// health/game over ///////////////////////////////////////////
+        
+        if (currenthealth <= 0f)
+        {
+            gameOverScreen.SetActive(true);
+        }
+        currentattackedCooldown -= Time.deltaTime;
+        
+    }
+    
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            gameOverScreen.SetActive(true);
+            
+            if (currentattackedCooldown <= 0f)
+            {
+                currenthealth--;
+                currentattackedCooldown = attackedCooldown;
+                hasbeenattacked = true;
+            }
+            
+        }
     }
     
 }

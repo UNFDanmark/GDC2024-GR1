@@ -12,8 +12,7 @@ public class EndlessHalway : MonoBehaviour
     public int xPos = -1200;
     public bool creatingSection = false;
     public int sectionNumber;
-    public GameObject player;
-    public Collider playerCollider;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -31,12 +30,8 @@ public class EndlessHalway : MonoBehaviour
             
         }
 
-        if (playerCollider)
-        {
-            Destroy(gameObject);
-            
-            
-        }
+      
+        
     }
      IEnumerator GenerateSection()
     {
@@ -47,8 +42,5 @@ public class EndlessHalway : MonoBehaviour
         creatingSection = false;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        throw new NotImplementedException();
-    }
+   
 }

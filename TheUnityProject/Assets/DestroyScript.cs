@@ -23,7 +23,7 @@ public class DestroyScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("Sections"))
         {
-            Destroy(other.gameObject.parent);
+            Destroy(other.gameObject);
      
         }
     }

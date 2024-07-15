@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -39,6 +40,12 @@ public class PlayerMovement : MonoBehaviour
     public bool hasbeenattacked = false;
     
     
+    ///////////////////////////////////////////////////// score //////////////////////////////////////////////////
+    
+    public TextMeshProUGUI timer;
+    public TextMeshProUGUI HighScore;
+    public TextMeshProUGUI MyScore;
+    private float Currentscore;
     
     
     void Start()
@@ -115,18 +122,39 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = permaspeed;
         }
         
+        ///////////////////////////////////////////////////// score //////////////////////////////////////////////////
+        
+        
+        
         
         /////////////////////////////////////////////// health/game over ///////////////////////////////////////////
         
         if (currenthealth <= 0f)
         {
+            bool sm = ScoreManager.instance.UpdateHighScore(Currentscore);
+            MyScore.text = "My Score: " + Currentscore;
+            if (sm)
+            {
+                HighScore.text = "High Score: " + Currentscore;
+            }
+            else
+            {
+                HighScore.text = "High Score: " + ScoreManager.instance.CurrentHighScore;
+            }
             gameOverScreen.SetActive(true);
+            
+        }
+        else
+        {
+            Currentscore = Mathf.Floor(Time.timeSinceLevelLoad*3) ;
+            timer.text = "" + Currentscore;
         }
 
         if (currentattackedCooldown > -1f)
         {
             currentattackedCooldown -= Time.deltaTime;
         }
+        
         
         
     }

@@ -38,7 +38,7 @@ public class EndlessHalway : MonoBehaviour
         sectionNumber = Random.Range(0, 4);
         Instantiate(section[sectionNumber], new Vector3(xPos, 0, 0), Quaternion.identity);
         xPos += -300;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(15);
         creatingSection = false;
     }
 

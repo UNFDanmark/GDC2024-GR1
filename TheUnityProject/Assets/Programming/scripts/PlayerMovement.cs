@@ -74,9 +74,9 @@ public class PlayerMovement : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded && !isSliding)
         {
-            
+            //velocity = new Vector3(move.x * -1f, Mathf.Sqrt(JumpHight * -2f * gravity), 0);
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
-            
+
         }
 
         velocity.y += gravity * Time.deltaTime;

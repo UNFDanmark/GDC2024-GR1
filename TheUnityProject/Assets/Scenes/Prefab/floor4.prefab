@@ -238,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 1141501567776604228}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0592, y: 1.52, z: -0.247}
+  m_LocalPosition: {x: -0.0592, y: 1.52, z: -0.056}
   m_LocalScale: {x: 0.0033333332, y: 2.7563999, z: 0.44367}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -763,7 +763,7 @@ Transform:
   m_GameObject: {fileID: 4896089899180127693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0407, y: 1.78, z: 0.251}
+  m_LocalPosition: {x: 0.0407, y: 1.78, z: -0.073}
   m_LocalScale: {x: 0.0033333332, y: 2.7563999, z: 0.44367}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -973,7 +973,7 @@ Transform:
   m_GameObject: {fileID: 5660637696242559536}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0706, y: 1.78, z: 0.255}
+  m_LocalPosition: {x: -0.0706, y: 1.78, z: -0.053}
   m_LocalScale: {x: 0.0033333332, y: 2.7563999, z: 0.44367}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 6728757332612144758}
   m_Layer: 6
   m_Name: floor4
-  m_TagString: Untagged
+  m_TagString: Sections
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

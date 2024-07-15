@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float SideSpeed = 5f;
     public float currentSpeed = 0f;
     public float permaspeed = -10f;
-    public float fastspeed = -25f;
+    public float fastspeed = -20f;
     public float slidepenalty = -5f;
     public CharacterController PlayerHeight;
     public float normalHeigth, crouchHeight;
@@ -46,6 +46,12 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshProUGUI HighScore;
     public TextMeshProUGUI MyScore;
     private float Currentscore;
+
+    public float StartMult = 1f;
+    public float SlutMult = 10f;
+    public float currentMult;
+    public float Multvariable = 0f;
+    public bool Mu = true;
     
     
     void Start()
@@ -53,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         currentSpeed = permaspeed;
         currenthealth = MaxHealth ;
         currentattackedCooldown = attackedCooldown;
+        currentMult = StartMult;
     }
     
     void Update()
@@ -61,8 +68,23 @@ public class PlayerMovement : MonoBehaviour
         
         //WASD
         float Z = Input.GetAxisRaw("Vertical");
-        Vector3 move = transform.right * currentSpeed + transform.forward * Z * SideSpeed;
+        Vector3 move = transform.right * currentSpeed * currentMult + transform.forward * Z * SideSpeed;
 
+        if (Mu)
+        {
+            if (currentMult < SlutMult)
+            {
+                currentMult = Mathf.Lerp(StartMult, SlutMult, (0.1f*Mathf.Pow(1.01f,Multvariable)) / 102.34f);
+            
+            
+            }
+
+            Multvariable += Time.deltaTime;
+
+
+        }
+        
+        
         controller.Move(move * Time.deltaTime);
         // Isgrounded (transformen i unity på karakterens fod)
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, groundMask);

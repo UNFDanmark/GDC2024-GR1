@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ObstacleCollider : MonoBehaviour
 {
-    public PlayerMovement pm;
+    private PlayerMovement pm;
     
     // Start is called before the first frame update
     void Start()
@@ -21,14 +21,19 @@ public class ObstacleCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (pm.currentattackedCooldown <= 0f)
+        print("obs");
+        if (other.gameObject.CompareTag("Player"))
         {
-            pm.currenthealth--;
-            pm.currentattackedCooldown = pm.attackedCooldown;
-            pm.hasbeenattacked = true;
+            print("av2");
+            if (pm.currentattackedCooldown <= 0f)
+            {
+                pm.currenthealth--;
+                pm.currentattackedCooldown = pm.attackedCooldown;
+                pm.hasbeenattacked = true;
+            }
             
-        }
-        
+            
+        } 
     }
     
 }

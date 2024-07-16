@@ -17,6 +17,7 @@ public class PressR : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene("Programmering");
+            
         }
     }
 }

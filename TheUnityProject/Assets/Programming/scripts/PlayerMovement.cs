@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float permaspeed = -10f;
     public float fastspeed = -20f;
     public float slidepenalty = -5f;
-    public CharacterController PlayerHeight;
+    public Transform PlayerHeight;
     public float normalHeigth, crouchHeight;
     public float slideaccelerationTime = 0.1f;
     public float cooldown = 0.5f;
@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isDecelerating = false;
     private float slideTime = 0f;
     private float decelTime = 0f;
+    public GameObject foothitbox;
+    public Collider PlayerBody;
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////// health/game over //////////////////////////////////////////////
@@ -115,7 +117,9 @@ public class PlayerMovement : MonoBehaviour
             isDecelerating = false;
             slideTime = 0f;
             decelTime = 0f;
-            PlayerHeight.height = crouchHeight;
+            PlayerHeight.position = new Vector3(PlayerHeight.position.x,crouchHeight,PlayerHeight.position.z);
+            PlayerBody.enabled = false;
+
         }
 
         if (isSliding)
@@ -135,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 currentSpeed = Mathf.Lerp(fastspeed, slidepenalty, decelTime / slidedecelerationTime);
                 decelTime += Time.deltaTime;
+                
             }
 
             slideTime += Time.deltaTime;
@@ -143,9 +148,11 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            PlayerHeight.height = normalHeigth;
+            PlayerHeight.position = new Vector3(PlayerHeight.position.x,normalHeigth,PlayerHeight.position.z);
             isSliding = false;
             currentSpeed = permaspeed;
+            
+            PlayerBody.enabled = true;
         }
         
         ///////////////////////////////////////////////////// score //////////////////////////////////////////////////

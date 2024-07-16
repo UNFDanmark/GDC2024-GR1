@@ -21,7 +21,7 @@ public class DestroyScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Sections"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
             Destroy(other.gameObject);
      

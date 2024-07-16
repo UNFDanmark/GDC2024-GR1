@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6078924429593112443}
   - component: {fileID: 1006504880371533926}
   - component: {fileID: 1351054992492093632}
+  - component: {fileID: 4217161389678357400}
   m_Layer: 0
   m_Name: Flying
   m_TagString: Obstacle
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4217161389678357400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472181449458396482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4aa20be8a80f74a892104ed5a6c05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 0}

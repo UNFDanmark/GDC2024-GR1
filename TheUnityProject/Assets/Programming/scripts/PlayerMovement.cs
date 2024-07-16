@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     public float attackedCooldown = 0.5f;
     public float currentattackedCooldown;
     public bool hasbeenattacked = false;
+    public GameObject UI;
     
     
     ///////////////////////////////////////////////////// score //////////////////////////////////////////////////
@@ -166,6 +167,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 HighScore.text = "High Score: " + ScoreManager.instance.CurrentHighScore;
             }
+
+            UI.SetActive(false);
             gameOverScreen.SetActive(true);
             
         }

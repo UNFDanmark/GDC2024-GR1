@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a20fd135e38a8af4196160757bc24491
+guid: f6310720277029e4b87a082edda3ed92
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,125 +33,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: main body armature.001|Armature.005Action.003
-      takeName: main body armature.001|Armature.005Action.003
-      internalID: -558553314424963045
-      firstFrame: 0
-      lastFrame: 0
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: main body armature.001|Armature.005Action.007
-      takeName: main body armature.001|Armature.005Action.007
-      internalID: 2036173841411995067
-      firstFrame: 0
-      lastFrame: 0
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: main body armature.001|Armature.005Action.010
-      takeName: main body armature.001|Armature.005Action.010
-      internalID: 1646157403869395261
-      firstFrame: 0
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: main body armature.001|Object.001Action
-      takeName: main body armature.001|Object.001Action
-      internalID: 4550924846650803936
-      firstFrame: 0
-      lastFrame: 79
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: main body armature.001|Object.003Action
-      takeName: main body armature.001|Object.003Action
-      internalID: 5187914912900740343
+      name: main body armature. v1.001|hopleg
+      takeName: main body armature. v1.001|hopleg
+      internalID: -3268878644723956965
       firstFrame: 0
       lastFrame: 29
       wrapMode: 0
@@ -178,9 +62,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: poncho armature.001|Armature.005Action.003
-      takeName: poncho armature.001|Armature.005Action.003
-      internalID: -169533160707041264
+      name: main body armature. v1.001|runcloth.001
+      takeName: main body armature. v1.001|runcloth.001
+      internalID: 4101349367687225675
       firstFrame: 0
       lastFrame: 0
       wrapMode: 0
@@ -207,11 +91,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: poncho armature.001|Armature.005Action.006
-      takeName: poncho armature.001|Armature.005Action.006
-      internalID: -4498453240615707631
+      name: main body armature. v1.001|slideleg
+      takeName: main body armature. v1.001|slideleg
+      internalID: -434177404447530301
       firstFrame: 0
-      lastFrame: 72
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -236,11 +120,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: poncho armature.001|Armature.005Action.007
-      takeName: poncho armature.001|Armature.005Action.007
-      internalID: -7962603805145487860
+      name: poncho armature. v1.001|poncho armature. v1.001Action
+      takeName: poncho armature. v1.001|poncho armature. v1.001Action
+      internalID: 628264112270084712
       firstFrame: 0
-      lastFrame: 0
+      lastFrame: 18
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -265,11 +149,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: poncho armature.001|Armature.005Action.009
-      takeName: poncho armature.001|Armature.005Action.009
-      internalID: 5574154423160839257
+      name: poncho armature. v1.001|ponchojump
+      takeName: poncho armature. v1.001|ponchojump
+      internalID: 2318070509036892042
       firstFrame: 0
-      lastFrame: 75
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -294,9 +178,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: poncho armature.001|Armature.005Action.011
-      takeName: poncho armature.001|Armature.005Action.011
-      internalID: -8271610224338862237
+      name: poncho armature. v1.001|runcloth
+      takeName: poncho armature. v1.001|runcloth
+      internalID: -7715338609174374682
       firstFrame: 0
       lastFrame: 38
       wrapMode: 0
@@ -306,6 +190,35 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: poncho armature. v1.001|runcloth.001
+      takeName: poncho armature. v1.001|runcloth.001
+      internalID: -5264104709399740524
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

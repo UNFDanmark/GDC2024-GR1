@@ -56,6 +56,9 @@ public class PlayerMovement : MonoBehaviour
     public float Multvariable = 0f;
     public bool Mu = true;
     
+    ///////////////////////////////////////////////////// animation //////////////////////////////////////////////////
+    
+    public Animator animator;
     
     
     
@@ -97,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+            animator.SetBool("Isjumping", false);
             
         }
         //Jump
@@ -104,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //velocity = new Vector3(move.x * -1f, Mathf.Sqrt(JumpHight * -2f * gravity), 0);
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
-
+            animator.SetBool("Isjumping", true);
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -119,6 +123,7 @@ public class PlayerMovement : MonoBehaviour
             decelTime = 0f;
             PlayerHeight.position = new Vector3(PlayerHeight.position.x,crouchHeight,PlayerHeight.position.z);
             PlayerBody.enabled = false;
+            animator.SetBool("Issliding", true);
 
         }
 
@@ -153,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = permaspeed;
             
             PlayerBody.enabled = true;
+            animator.SetBool("Issliding", false);
         }
         
         ///////////////////////////////////////////////////// score //////////////////////////////////////////////////

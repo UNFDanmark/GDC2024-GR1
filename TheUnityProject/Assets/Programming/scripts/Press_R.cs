@@ -18,6 +18,14 @@ public class PressR : MonoBehaviour
         {
             SceneManager.LoadScene("Programmering");
             
+            
         }
     }
+
+    public void Titelscreen()
+    {
+        SceneManager.LoadScene("Programmering");
+        Debug.Log("sheesh");
+    }
+    
 }

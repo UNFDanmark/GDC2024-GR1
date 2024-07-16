@@ -23,6 +23,7 @@ public class HealthUiUpdate : MonoBehaviour
         if (pM.hasbeenattacked)
         {
             tm.text = "Health " + pM.currenthealth + "/" + pM.MaxHealth;
+            pM.hasbeenattacked = false;
         }
     }
 }

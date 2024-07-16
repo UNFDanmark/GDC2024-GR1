@@ -54,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
     public bool Mu = true;
     
     
+    
+    
+    
     void Start()
     {
         currentSpeed = permaspeed;
@@ -105,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime );
         
         // Slide
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isSliding = true;
             isDecelerating = false;
@@ -137,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             PlayerHeight.height = normalHeigth;
             isSliding = false;
@@ -183,9 +186,9 @@ public class PlayerMovement : MonoBehaviour
     
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Obstacle"))
         {
-            
+            print("av2");
             if (currentattackedCooldown <= 0f)
             {
                 currenthealth--;
@@ -193,8 +196,12 @@ public class PlayerMovement : MonoBehaviour
                 hasbeenattacked = true;
             }
             
-        }
+            
+        } 
+        
     }
+    
+    
     
 }
 

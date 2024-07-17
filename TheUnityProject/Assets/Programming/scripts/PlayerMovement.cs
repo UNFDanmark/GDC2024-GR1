@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 print("Run sound");
                 audioSource.Play();
-            }
+            } 
 
             
         }

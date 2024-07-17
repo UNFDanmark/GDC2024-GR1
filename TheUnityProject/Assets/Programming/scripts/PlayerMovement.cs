@@ -63,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
     ////////////////////////////////////////////////// Audio //////////////////////////////////////////////////////
     AudioSource audioSource;
     public AudioClip jumpsound;
-
-
+    public AudioClip runningsound;
+    public AudioClip slidingsound;
     void Start()
     {
         currentSpeed = permaspeed;
@@ -72,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
         currentattackedCooldown = attackedCooldown;
         currentMult = StartMult;
         audioSource = GetComponent<AudioSource>();
-
     }
     
     void Update()
@@ -105,7 +104,14 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
             animator.SetBool("Isjumping", false);
-            
+           
+            if (!audioSource.isPlaying)
+            {
+                print("Run sound");
+                audioSource.Play();
+            }
+
+
         }
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded && !isSliding)
@@ -113,7 +119,9 @@ public class PlayerMovement : MonoBehaviour
             //velocity = new Vector3(move.x * -1f, Mathf.Sqrt(JumpHight * -2f * gravity), 0);
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
             animator.SetBool("Isjumping", true);
+            audioSource.Stop();
             audioSource.PlayOneShot(jumpsound);
+            print("Air");
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -129,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerHeight.position = new Vector3(PlayerHeight.position.x,crouchHeight,PlayerHeight.position.z);
             PlayerBody.enabled = false;
             animator.SetBool("Issliding", true);
-
+            audioSource.PlayOneShot(slidingsound);
         }
 
         if (isSliding)

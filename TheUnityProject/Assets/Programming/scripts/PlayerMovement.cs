@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip runningsound;
     public AudioClip slidingsound;
     private bool justLanded = false;
+  
 
     void Start()
     {
@@ -120,7 +121,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 audioSource.volume = 1f;
                 print("Run sound");
+            
                 audioSource.Play();
+              
             } 
 
             

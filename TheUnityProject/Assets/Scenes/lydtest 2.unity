@@ -3849,7 +3849,7 @@ MonoBehaviour:
   Multvariable: 0
   Mu: 1
   animator: {fileID: 1213449406}
-  jumpsound: {fileID: 8300000, guid: a08758dec1f04984ea6e5d19f5d2dfa9, type: 3}
+  jumpsound: {fileID: 8300000, guid: 33ace1b36ab372f47ac4aa5a20df8133, type: 3}
 --- !u!143 &1799526257
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3929,7 +3929,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a08758dec1f04984ea6e5d19f5d2dfa9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 33ace1b36ab372f47ac4aa5a20df8133, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -3087,11 +3087,11 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 8f0efc37e4d2f77459e28199e5f3f786,
+    m_HighlightedSprite: {fileID: 21300000, guid: fe2594d999045204db534bb1acd9ca9a,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 8f0efc37e4d2f77459e28199e5f3f786, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 8f0efc37e4d2f77459e28199e5f3f786, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 8f0efc37e4d2f77459e28199e5f3f786, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: fe2594d999045204db534bb1acd9ca9a, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: fe2594d999045204db534bb1acd9ca9a, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: fe2594d999045204db534bb1acd9ca9a, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -4462,6 +4462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1890478709}
+  - component: {fileID: 1890478710}
   m_Layer: 0
   m_Name: highscoreEntryContainer
   m_TagString: Untagged
@@ -4485,6 +4486,18 @@ Transform:
   - {fileID: 1843740807}
   m_Father: {fileID: 685704242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890478710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890478708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0b1549d3841d94b88f260c88ed907a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910319805
 GameObject:
   m_ObjectHideFlags: 0

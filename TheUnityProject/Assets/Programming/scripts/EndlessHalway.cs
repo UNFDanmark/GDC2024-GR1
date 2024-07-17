@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class EndlessHalway : MonoBehaviour
 {
     public GameObject[] section;
-    public int xPos = -1200;
+    public float xPos = -336.85f;
     public bool creatingSection = false;
     public int sectionNumber;
    
@@ -37,7 +37,7 @@ public class EndlessHalway : MonoBehaviour
     {
         sectionNumber = Random.Range(0, 4);
         Instantiate(section[sectionNumber], new Vector3(xPos, 0, 0), Quaternion.identity);
-        xPos += -300;
+        xPos += -335.85f;
         yield return new WaitForSeconds(10);
         creatingSection = false;
     }

@@ -59,16 +59,20 @@ public class PlayerMovement : MonoBehaviour
     ///////////////////////////////////////////////////// animation //////////////////////////////////////////////////
     
     public Animator animator;
-    
-    
-    
-    
+
+    ////////////////////////////////////////////////// Audio //////////////////////////////////////////////////////
+    AudioSource audioSource;
+    public AudioClip jumpsound;
+
+
     void Start()
     {
         currentSpeed = permaspeed;
         currenthealth = MaxHealth ;
         currentattackedCooldown = attackedCooldown;
         currentMult = StartMult;
+        audioSource = GetComponent<AudioSource>();
+
     }
     
     void Update()
@@ -109,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
             //velocity = new Vector3(move.x * -1f, Mathf.Sqrt(JumpHight * -2f * gravity), 0);
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
             animator.SetBool("Isjumping", true);
+            audioSource.PlayOneShot(jumpsound);
         }
 
         velocity.y += gravity * Time.deltaTime;

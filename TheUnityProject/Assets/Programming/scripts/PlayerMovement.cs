@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private float decelTime = 0f;
     public GameObject foothitbox;
     public Collider PlayerBody;
+    private bool Isjumping = false;
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////// health/game over //////////////////////////////////////////////
@@ -109,7 +110,8 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
             animator.SetBool("Isjumping", false);
-           
+            Isjumping = false;
+            
             if(justLanded)
             {
                 audioSource.Stop();
@@ -129,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded && !isSliding)
         {
+            Isjumping = true;
             //velocity = new Vector3(move.x * -1f, Mathf.Sqrt(JumpHight * -2f * gravity), 0);
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
             animator.SetBool("Isjumping", true);
@@ -143,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime );
         
         // Slide
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !Isjumping)
         {
             isSliding = true;
             isDecelerating = false;
@@ -180,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift) && !Isjumping)
         {
             PlayerHeight.position = new Vector3(PlayerHeight.position.x,normalHeigth,PlayerHeight.position.z);
             isSliding = false;

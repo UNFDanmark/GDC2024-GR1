@@ -74,12 +74,14 @@ public class PlayerMovement : MonoBehaviour
         currentattackedCooldown = attackedCooldown;
         currentMult = StartMult;
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 1f;
     }
     
     void Update()
     {
+
         ////////////////////////////////////////////////// Movement //////////////////////////////////////////////////
-        
+
         //WASD
         float Z = Input.GetAxisRaw("Vertical");
         Vector3 move = transform.right * currentSpeed * currentMult + transform.forward * Z * SideSpeed;
@@ -114,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (!audioSource.isPlaying)
             {
+                audioSource.volume = 1f;
                 print("Run sound");
                 audioSource.Play();
             } 
@@ -127,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(JumpHight * -2f * gravity);
             animator.SetBool("Isjumping", true);
             audioSource.Stop();
+            audioSource.volume = 1f;
             audioSource.PlayOneShot(jumpsound);
             justLanded = true;
             print("Air");
@@ -145,7 +149,8 @@ public class PlayerMovement : MonoBehaviour
             PlayerHeight.position = new Vector3(PlayerHeight.position.x,crouchHeight,PlayerHeight.position.z);
             PlayerBody.enabled = false;
             animator.SetBool("Issliding", true);
-            audioSource.Play(slidingsound);
+            audioSource.volume = 0.05f;
+            audioSource.PlayOneShot(slidingsound);
         }
 
         if (isSliding)
@@ -181,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerBody.enabled = true;
             animator.SetBool("Issliding", false);
             audioSource.Stop();
+
         }
         
         ///////////////////////////////////////////////////// score //////////////////////////////////////////////////

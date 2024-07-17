@@ -145,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
             PlayerHeight.position = new Vector3(PlayerHeight.position.x,crouchHeight,PlayerHeight.position.z);
             PlayerBody.enabled = false;
             animator.SetBool("Issliding", true);
-            audioSource.PlayOneShot(slidingsound);
+            audioSource.Play(slidingsound);
         }
 
         if (isSliding)
@@ -180,6 +180,7 @@ public class PlayerMovement : MonoBehaviour
             
             PlayerBody.enabled = true;
             animator.SetBool("Issliding", false);
+            audioSource.Stop();
         }
         
         ///////////////////////////////////////////////////// score //////////////////////////////////////////////////

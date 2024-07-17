@@ -10,22 +10,5 @@ using UnityEngine.UI;
 
 public class MouseHover : MonoBehaviour
 {
-    public GameObject hoverbotten;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        hoverbotten.SetActive(false);
-    }
-
-    public void IPointerEnterHandler(PointerEventData eventData)
-    {
-        
-    }
-    
-    
-//    public void OnMouseExit()
-//    {
-//        hoverbotten.SetActive(false);
-//    }
 }

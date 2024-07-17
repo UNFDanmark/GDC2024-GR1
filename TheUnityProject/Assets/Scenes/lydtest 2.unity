@@ -3852,7 +3852,7 @@ MonoBehaviour:
   animator: {fileID: 1213449406}
   jumpsound: {fileID: 8300000, guid: f7249a2d36210fb4ab12764451a9ab4a, type: 3}
   runningsound: {fileID: 8300000, guid: 2ed61e4db6a57874ca2bf74daf9d5385, type: 3}
-  slidingsound: {fileID: 8300000, guid: 46ebb6c9669ce1b43b97cfd3bac02f4e, type: 3}
+  slidingsound: {fileID: 8300000, guid: d39928fe86ae3ba48b783c2e782ba33c, type: 3}
 --- !u!143 &1799526257
 CharacterController:
   m_ObjectHideFlags: 0

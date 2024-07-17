@@ -36,7 +36,7 @@ public class EndlessHalway : MonoBehaviour
      IEnumerator GenerateSection()
     {
         sectionNumber = Random.Range(0, 4);
-        Instantiate(section[sectionNumber], new Vector3(xPos, 0, 0), Quaternion.identity);
+        Instantiate(section[sectionNumber], new Vector3(xPos, 0, 0), transform.rotation);
         xPos += -335.85f;
         yield return new WaitForSeconds(10);
         creatingSection = false;

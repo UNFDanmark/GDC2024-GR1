@@ -65,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jumpsound;
     public AudioClip runningsound;
     public AudioClip slidingsound;
+    private bool justLanded = false;
+
     void Start()
     {
         currentSpeed = permaspeed;
@@ -105,13 +107,18 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
             animator.SetBool("Isjumping", false);
            
+            if(justLanded)
+            {
+                audioSource.Stop();
+                justLanded = false;
+            }
             if (!audioSource.isPlaying)
             {
                 print("Run sound");
                 audioSource.Play();
             }
 
-
+            
         }
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded && !isSliding)
@@ -121,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Isjumping", true);
             audioSource.Stop();
             audioSource.PlayOneShot(jumpsound);
+            justLanded = true;
             print("Air");
         }
 

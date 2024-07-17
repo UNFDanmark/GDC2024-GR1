@@ -8,35 +8,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1021553798054694351, guid: d95f99df9dd422c44ac8bb48c2d65a82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866065479756236889, guid: d95f99df9dd422c44ac8bb48c2d65a82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632701208373093014, guid: d95f99df9dd422c44ac8bb48c2d65a82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4079538444990060379, guid: d95f99df9dd422c44ac8bb48c2d65a82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0235
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0235
+      value: 0.30000004
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0235
+      value: 0.30000004
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.73
+      value: 79.88535
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.444
+      value: -30.255047
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.493
+      value: -75.19616
       objectReference: {fileID: 0}
     - target: {fileID: 6573988471790336605, guid: d95f99df9dd422c44ac8bb48c2d65a82,
         type: 3}
@@ -77,6 +97,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: scytheomvendt Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224945461419274895, guid: d95f99df9dd422c44ac8bb48c2d65a82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

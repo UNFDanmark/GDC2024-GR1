@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6709419924020738140}
   m_Layer: 0
   m_Name: sECTION 3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 7447158430317992060}
   m_Layer: 0
   m_Name: "v\xE6gcrouchoderd\xF8r (1)"
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,7 +478,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 2303138053361914950}
   m_Layer: 0
   m_Name: hbfdgers
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 5470386345697341104}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.06, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -781,6 +781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stonefinal
       objectReference: {fileID: 0}
+    - target: {fileID: 1413999891531123443, guid: 73cd540e86940b74c9a68b12500af4d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3871555113348395667, guid: 73cd540e86940b74c9a68b12500af4d8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -902,6 +907,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icosphere.006
       objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1013,6 +1023,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icosphere.006 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1123,6 +1138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vase2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580507796960621116, guid: efc4f162c97ae644191340ec0c135124,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8993190344185905712, guid: efc4f162c97ae644191340ec0c135124,
         type: 3}
@@ -1245,6 +1265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.052 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1365,6 +1390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.052 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1484,6 +1514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -1670,6 +1705,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder.027 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6677923312473676215, guid: a9af01a916f543f499b95f7c891d1941,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 471168141175528695, guid: a9af01a916f543f499b95f7c891d1941, type: 3}
     m_RemovedGameObjects: []
@@ -1726,6 +1766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -1847,6 +1892,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.052 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1967,6 +2017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7672241835081323800, guid: d1b3bb55b3e20d8478dc5a02781f5316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8960804969612655113, guid: d1b3bb55b3e20d8478dc5a02781f5316,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -2082,6 +2137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Icosphere.006 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
@@ -2204,6 +2264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BIGBARREL.001
       objectReference: {fileID: 0}
+    - target: {fileID: 2806194615525711392, guid: 797f730afee9141458108db56bfacbc4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6266246196375533712, guid: 797f730afee9141458108db56bfacbc4,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2325,6 +2390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7672241835081323800, guid: d1b3bb55b3e20d8478dc5a02781f5316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8960804969612655113, guid: d1b3bb55b3e20d8478dc5a02781f5316,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2445,6 +2515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plane.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061521234386890814, guid: 18ae3dcd763a9ae489cd627b483a4d6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3806263476116840408, guid: 18ae3dcd763a9ae489cd627b483a4d6c,
         type: 3}
@@ -2571,6 +2646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -2757,6 +2837,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder.027 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6677923312473676215, guid: a9af01a916f543f499b95f7c891d1941,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 471168141175528695, guid: a9af01a916f543f499b95f7c891d1941, type: 3}
     m_RemovedGameObjects: []
@@ -2813,6 +2898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -2934,6 +3024,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icosphere.006 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3054,6 +3149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -3240,6 +3340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder.027
       objectReference: {fileID: 0}
+    - target: {fileID: 6677923312473676215, guid: a9af01a916f543f499b95f7c891d1941,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3295,6 +3400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vase2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580507796960621116, guid: efc4f162c97ae644191340ec0c135124,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8993190344185905712, guid: efc4f162c97ae644191340ec0c135124,
         type: 3}
@@ -3482,6 +3592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder.027 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6677923312473676215, guid: a9af01a916f543f499b95f7c891d1941,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 471168141175528695, guid: a9af01a916f543f499b95f7c891d1941, type: 3}
     m_RemovedGameObjects: []
@@ -3538,6 +3653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -3724,6 +3844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder.027 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6677923312473676215, guid: a9af01a916f543f499b95f7c891d1941,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 471168141175528695, guid: a9af01a916f543f499b95f7c891d1941, type: 3}
     m_RemovedGameObjects: []
@@ -3780,6 +3905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Icosphere.006 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
@@ -3891,6 +4021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -4012,6 +4147,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.052 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4131,6 +4271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -4252,6 +4397,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.052 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4372,6 +4522,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icosphere.006 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8331553501772756182, guid: 93ead217b58f0984498859136bfe1a40,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8881497666787599619, guid: 93ead217b58f0984498859136bfe1a40,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4482,6 +4637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cube.052 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489825189055143896, guid: 9bb37eaada176ee49b1f4ccf84da040c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7915641672157125839, guid: 9bb37eaada176ee49b1f4ccf84da040c,
         type: 3}
@@ -4602,6 +4762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672241835081323800, guid: d1b3bb55b3e20d8478dc5a02781f5316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8960804969612655113, guid: d1b3bb55b3e20d8478dc5a02781f5316,
         type: 3}
@@ -4784,6 +4949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vase 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7606463979127871813, guid: a6c4ed353da36394593b3b5db9830675,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4839,6 +5009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stonefinal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413999891531123443, guid: 73cd540e86940b74c9a68b12500af4d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3871555113348395667, guid: 73cd540e86940b74c9a68b12500af4d8,
         type: 3}

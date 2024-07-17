@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     private bool isGrounded;
-    public float JumpHight = 3f;
+    public float JumpHight = 5f;
     public float SideSpeed = 5f;
     public float currentSpeed = 0f;
     public float permaspeed = -10f;

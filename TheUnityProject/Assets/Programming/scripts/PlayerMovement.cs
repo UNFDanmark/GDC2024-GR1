@@ -234,8 +234,9 @@ public class PlayerMovement : MonoBehaviour
         
     }
     
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
+        print("collision");
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Obstacle"))
         {
             print("av2");
@@ -249,9 +250,25 @@ public class PlayerMovement : MonoBehaviour
             
         } 
         
+    }*/
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+
+        print("controller hit");
+        if (hit.gameObject.CompareTag("Enemy") || hit.gameObject.CompareTag("Obstacle"))
+        {
+            print("av2");
+            if (currentattackedCooldown <= 0f)
+            {
+                currenthealth--;
+                currentattackedCooldown = attackedCooldown;
+                hasbeenattacked = true;
+            }
+            
+            
+        } 
     }
-    
-    
-    
+
 }
 

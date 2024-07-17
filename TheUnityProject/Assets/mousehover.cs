@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class mousehover : MonoBehaviour
 
+public class MouseHover : MonoBehaviour
 {
     public GameObject hoverbotten;
     
@@ -17,12 +18,14 @@ public class mousehover : MonoBehaviour
         hoverbotten.SetActive(false);
     }
 
-    public void OnMouseEnter()
+    public void IPointerEnterHandler(PointerEventData eventData)
     {
-        hoverbotten.SetActive(true);
+        
     }
-    public void OnMouseExit()
-    {
-        hoverbotten.SetActive(false);
-    }
+    
+    
+//    public void OnMouseExit()
+//    {
+//        hoverbotten.SetActive(false);
+//    }
 }

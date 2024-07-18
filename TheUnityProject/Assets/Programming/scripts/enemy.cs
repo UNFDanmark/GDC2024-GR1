@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Transform playerTransform;
+    public PlayerMovement pm;
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class enemy : MonoBehaviour
     void Update()
     {
         agent.destination = playerTransform.position;
+        agent.speed = pm.currentSpeed;
     }
     
     

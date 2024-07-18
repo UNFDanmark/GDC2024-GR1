@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     private bool isGrounded;
-    public float JumpHight = 3f;
+    public float JumpHight = 5f;
     public float SideSpeed = 5f;
     public float currentSpeed = 0f;
     public float permaspeed = -10f;
@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     ////////////////////////////////////////////////// Audio //////////////////////////////////////////////////////
     AudioSource audioSource;
+    public AudioClip music;
     public AudioClip jumpsound;
     public AudioClip runningsound;
     public AudioClip slidingsound;
@@ -77,11 +78,13 @@ public class PlayerMovement : MonoBehaviour
         currentMult = StartMult;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = 1f;
+      
     }
     
     void Update()
     {
 
+       
         ////////////////////////////////////////////////// Movement //////////////////////////////////////////////////
 
         //WASD
@@ -234,8 +237,9 @@ public class PlayerMovement : MonoBehaviour
         
     }
     
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
+        print("collision");
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Obstacle"))
         {
             print("av2");
@@ -249,9 +253,25 @@ public class PlayerMovement : MonoBehaviour
             
         } 
         
+    }*/
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+
+        print("controller hit");
+        if (hit.gameObject.CompareTag("Enemy") || hit.gameObject.CompareTag("Obstacle"))
+        {
+            print("av2");
+            if (currentattackedCooldown <= 0f)
+            {
+                currenthealth--;
+                currentattackedCooldown = attackedCooldown;
+                hasbeenattacked = true;
+            }
+            
+            
+        } 
     }
-    
-    
-    
+
 }
 

@@ -20,9 +20,11 @@ public class DestroyScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        print("oiwhadouwabdiwa");
 
         if (other.gameObject.CompareTag("Obstacle"))
         {
+            print("shiiit");
             Destroy(other.gameObject);
      
         }

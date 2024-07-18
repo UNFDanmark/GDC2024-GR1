@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (currentMult < SlutMult)
             {
-                currentMult = Mathf.Lerp(StartMult, SlutMult, (0.1f*Mathf.Pow(1.015f,Multvariable)) / 102.34f);
+                currentMult = Mathf.Lerp(StartMult, SlutMult, (0.1f*Mathf.Pow(1.015f,Multvariable)) / 95.34f);
             
             
             }

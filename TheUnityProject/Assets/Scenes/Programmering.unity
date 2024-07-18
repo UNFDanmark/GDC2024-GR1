@@ -3250,7 +3250,7 @@ MonoBehaviour:
     m_Bits: 64
   JumpHight: 5
   SideSpeed: 5
-  currentSpeed: -10
+  currentSpeed: -15
   permaspeed: -15
   fastspeed: -20
   slidepenalty: -5
@@ -3273,7 +3273,7 @@ MonoBehaviour:
   HighScore: {fileID: 125096284}
   MyScore: {fileID: 673860572}
   StartMult: 1
-  SlutMult: 20
+  SlutMult: 10
   currentMult: 0
   Multvariable: 0
   Mu: 1
@@ -3317,7 +3317,7 @@ Transform:
   m_GameObject: {fileID: 1799526255}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.08, y: 2.08, z: -0.5}
+  m_LocalPosition: {x: 125.63, y: 2.08, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

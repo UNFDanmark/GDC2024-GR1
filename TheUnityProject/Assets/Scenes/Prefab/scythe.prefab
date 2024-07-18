@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4873975428331868897}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1807018560568432833}
   - component: {fileID: 7619813266013246726}
+  - component: {fileID: 7986307715605595740}
   m_Layer: 0
   m_Name: CSCYTHE
   m_TagString: Obstacle
@@ -120,6 +121,28 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.010981843, y: 3.965882, z: 0.08750939}
     m_Extent: {x: 0.14068721, y: 0.74691844, z: 1.1969029}
   m_DirtyAABB: 0
+--- !u!64 &7986307715605595740
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021553798054694351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1800002342763075030
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +154,7 @@ GameObject:
   - component: {fileID: 75626428430972264}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,7 +304,7 @@ GameObject:
   - component: {fileID: 3614746457374663774}
   m_Layer: 0
   m_Name: Bone_end
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +421,7 @@ GameObject:
   - component: {fileID: 4480864317576044995}
   m_Layer: 0
   m_Name: Bone_end
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +452,7 @@ GameObject:
   - component: {fileID: 5689021216135588322}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +484,7 @@ GameObject:
   - component: {fileID: 8868953287562820767}
   m_Layer: 0
   m_Name: Armature.001
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -550,7 +573,7 @@ GameObject:
   - component: {fileID: 2640758735741764874}
   m_Layer: 0
   m_Name: Armature.002
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -582,7 +605,7 @@ GameObject:
   - component: {fileID: 2980398105391117656}
   m_Layer: 0
   m_Name: Bone_end
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

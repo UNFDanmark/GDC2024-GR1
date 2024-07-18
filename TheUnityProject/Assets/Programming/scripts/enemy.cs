@@ -21,7 +21,7 @@ public class enemy : MonoBehaviour
     void Update()
     {
         agent.destination = playerTransform.position;
-        pm.currentSpeed = agent.speed;
+        agent.speed = pm.currentSpeed;
     }
     
     

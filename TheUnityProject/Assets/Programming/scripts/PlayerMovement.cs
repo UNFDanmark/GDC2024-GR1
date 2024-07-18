@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     ////////////////////////////////////////////////// Audio //////////////////////////////////////////////////////
     AudioSource audioSource;
+    public AudioClip music;
     public AudioClip jumpsound;
     public AudioClip runningsound;
     public AudioClip slidingsound;
@@ -77,11 +78,13 @@ public class PlayerMovement : MonoBehaviour
         currentMult = StartMult;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = 1f;
+      
     }
     
     void Update()
     {
 
+       
         ////////////////////////////////////////////////// Movement //////////////////////////////////////////////////
 
         //WASD

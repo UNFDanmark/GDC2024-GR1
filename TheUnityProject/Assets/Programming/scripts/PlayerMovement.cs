@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (currentMult < SlutMult)
             {
-                currentMult = Mathf.Lerp(StartMult, SlutMult, (0.1f*Mathf.Pow(1.01f,Multvariable)) / 102.34f);
+                currentMult = Mathf.Lerp(StartMult, SlutMult, (0.1f*Mathf.Pow(1.015f,Multvariable)) / 102.34f);
             
             
             }
@@ -204,6 +204,11 @@ public class PlayerMovement : MonoBehaviour
         
         
         /////////////////////////////////////////////// health/game over ///////////////////////////////////////////
+        if (transform.position.y < -25)
+        {
+            currenthealth = 0;
+        }
+        
         
         if (currenthealth <= 0f)
         {
@@ -237,23 +242,6 @@ public class PlayerMovement : MonoBehaviour
         
     }
     
-    /*void OnCollisionEnter(Collision other)
-    {
-        print("collision");
-        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Obstacle"))
-        {
-            print("av2");
-            if (currentattackedCooldown <= 0f)
-            {
-                currenthealth--;
-                currentattackedCooldown = attackedCooldown;
-                hasbeenattacked = true;
-            }
-            
-            
-        } 
-        
-    }*/
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {

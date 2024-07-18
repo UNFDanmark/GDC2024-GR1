@@ -25,7 +25,13 @@ public class PressR : MonoBehaviour
     public void Titelscreen()
     {
         SceneManager.LoadScene("Programmering");
-        Debug.Log("sheesh");
+        
     }
+    
+    public void Programmering()
+        {
+            SceneManager.LoadScene("Titlescreen");
+            
+        }
     
 }
